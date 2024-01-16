@@ -1,0 +1,67 @@
+body{
+   min-height: 100%;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+ }
+ .Anim{
+    height: 70px;
+    background: transparent;
+ }
+ .Anime{
+    height: 100px;
+    background: transparent;
+ }
+ .ani{
+    height: 120px;
+    width: 120px;
+    background-color: black;
+    padding: 10px;
+    border: 5px solid white;
+    border-radius: 60px;
+ }
+.reset{
+ border: none;
+ padding: 10px 15px;
+ font-weight: bold;
+ font-size: 15px;
+ border-radius: 10px;
+ margin: 20px;
+}
+.Winner{
+ font-size: 50px;
+ font-weight: bold;
+ margin: 50px;
+}
+pre{
+ margin: 20px;
+}
+.pla{
+ height: 200px;
+ display: flex;
+ justify-content: space-around;
+}
+.show,.show1,.d{
+ margin-left: 15px;
+ margin-right: 15px;
+}
+.show,.show1{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.Annou,.power{
+ text-align: center;
+}
+.Scores{
+ height: 60px;
+ width: 400px;
+ border: 2px solid white;
+ padding: 10px;
+ text-align: center;
+}

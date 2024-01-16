@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  <div>
+    <h1 class="title">Rock Paper Scissor</h1>
+</div>
+   <div class="Annou">
+      <p class="Winner">ATTACK</p>
+   </div>
+    
+   <div class="pla">
+    <div class="show">
+      <p class="option">-</p>
+      <h3>You</h3>
+    </div>
+    <div class="d">
+      <h1>VS</h1>
+    </div>
+    <div class="show1">
+      <p class="option1">-</p>
+      <h3>Comp</h3>
+    </div>
+    </div>
+
+   <div class="power">
+      <button class="ani" onclick="user='rock';rps()"><img src="images/rock.png" alt="" class="Anim"></button>
+
+    <button class="ani" onclick="user='paper';rps()" ><img src="images/paper.png" alt="" class="Anim"></button>
+
+    <button class="ani" onclick="user='Siscor';rps()" ><img src="images/Siscor.png" alt="" class="Anim"></button>
+
+   </div>
+    
+    <button class="reset" onclick="score.Win=0;score.Lose=0;score.Tie=0; localStorage.removeItem('score');  updateScore();"
+    >Reset</button>
+
+    <div class="Scores">
+      <p class="result"></p>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

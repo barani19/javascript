@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="console.log(`quantity: ${quantity}`);">show quantity</button>
+   <button onclick="quantity=quantity+1;console.log(`quantity: ${quantity}`);">add to cart</button>
+   <button onclick="quantity=quantity+2;console.log(`quantity: ${quantity}`);">+2</button>
+   <button onclick="quantity=quantity+3;console.log(`quantity: ${quantity}`);">+3</button>
+   <button onclick="quantity=0;console.log('quantity=0');">reset cart</button>
+   <script>
+   let quantity=0;
+   </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sub{
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 10px 15px 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .ub{
+            color: black;
+            background-color: rgb(206, 201, 201);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>You tube Subcribe button</p>
+    <button class="sub" onclick="Change()">Subscribe</button>
+    <p>Rock Paper Scissor</p>
+    <a href="rock_pap_sis.html">Click here</a>
+    <p>Amazon Shipping Counter</p>
+    <input type="text"id="in" placeholder="Cost of Order" onkeyup="document.querySelector('.Display').innerHTML=document.querySelector('#in').value">
+    <button onclick="Cal()">Calculate</button>
+    <p class="Display"></p>
+   <script>
+      function Change(){
+        let button = document.querySelector('.sub')
+        if(button.innerText === 'Subscribe'){
+            button.innerText = 'Subscribed';
+            button.classList.add('ub');
+        }
+        else{
+            button.innerText = 'Subscribe';
+            button.classList.remove('ub');
+        }
+      }
+    </script>
+</body>
+</html>

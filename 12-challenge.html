@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+</head>
+<body>
+    <button class="add()">add</button>
+    <button class="rem()">remove</button>
+    <script>
+        let count = 0;
+        function show(){
+             if(count!=0){
+                document.title = `${count} Document`
+             }
+        }
+        function add(){
+            count+=1;
+            if(count!=0){
+                document.title = `${count} Document`
+             }
+        }
+        function rem(){
+            count-=1;
+            show()
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Anonymous function function without name is called
+        const fun  = function(){
+            console.log('Im anon');
+        }
+        //Asynchrounous function doesnt wait for future dunction ,function inseide a function
+        setTimeout(function(){
+            console.log('helloooo');
+        },3000);
+        console.log('hello');
+        const iid = setInterval(function(){
+            console.log('im interval');
+        },2000);
+        console.log('sfter inter');
+        const t = [1,2,3]
+        t.forEach(function(value,index){
+            console.log(value,index);
+        })
+        clearInterval(iid);
+    </script>
+</body>
+</html>
