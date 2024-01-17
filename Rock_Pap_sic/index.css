@@ -1,5 +1,6 @@
-body{
-   min-height: 100%;
+body,.game{
+   overflow: hidden;
+    min-height: 100vh;
     min-width: 500px;
     display: flex;
     flex-direction: column;
@@ -8,6 +9,72 @@ body{
     background-color: black;
     color: white;
     font-family: 'Courier New', Courier, monospace;
+ }
+ .preload{
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   animation:  home 10s linear forwards;
+   position: relative;
+ }
+ @keyframes home {
+   0%{
+      color: black;
+   }
+   10%{
+    color: white;
+    min-height: 90vh;
+   }
+   20%{
+      color: white;
+      min-height: 80vh;
+   }
+   30%{
+      color: white;
+      min-height: 70vh;
+   }
+   40%{
+      color: white;
+      min-height: 60vh;
+      opacity: 0;
+   }
+   50%{
+      color: white;
+      min-height: 50vh;
+      opacity: 0;
+   }
+   60%{
+      color: white;
+      min-height: 40vh;
+      opacity: 0;
+   }
+   70%{
+      color: white;
+      min-height: 30vh;
+      opacity: 0;
+   }
+   80%{
+      color: white;
+      min-height: 20vh;
+      opacity: 0;
+   }
+   90%{
+      color: white;
+      min-height: 10vh;
+      opacity: 0;
+   }
+   95%{
+      color: white;
+      min-height: 5vh;
+      opacity: 0;
+   }
+   100%{
+     display: none;
+      opacity: 0;
+      min-height: 0vh;
+   }
  }
  .Anim{
     height: 70px;
